@@ -6,10 +6,15 @@ python:
   - 3.6
   - 3.7
 install:
+  - rpm --version
+  - pip list
   - RPM_PY_VERBOSE=true pip install -vvv rpm-py-installer
+  - pip list
   # - python setup.py develop
 script:
   # - py.test -v myproject/tests
+  - pip list
+  - python -c "import rpm; print(rpm.__version__)"
   - echo "script done"
 addons:
   apt:
