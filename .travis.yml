@@ -1,0 +1,18 @@
+dist: xenial
+language: python
+sudo: false
+python:
+  - 2.7
+  - 3.6
+  - 3.7
+install:
+  - RPM_PY_VERBOSE=true pip install -vvv rpm-py-installer
+  # - python setup.py develop
+script:
+  # - py.test -v myproject/tests
+  - echo "script done"
+addons:
+  apt:
+    packages:
+    - rpm
+    - librpm-dev
