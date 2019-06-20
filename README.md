@@ -2,4 +2,4 @@
 
 An experiment for RPM Py Installer on Ubuntu Xenial
 
-See [https://github.com/junaruga/rpm-py-installer/issues/194]
+See https://github.com/junaruga/rpm-py-installer/issues/194
